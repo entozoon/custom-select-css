@@ -2,6 +2,7 @@ $select-fz: 16px !default; // set explicitly to prevent iOS zoom
 $select-pr: 30px !default;
 $select-fa: '\f0d7' !default;
 $select-fa-fz: inherit !default;
+$select-cursor: pointer !default;
 
 .select {
   position: relative;
@@ -14,6 +15,7 @@ $select-fa-fz: inherit !default;
     width: 100%;
     padding-right: $select-pr;
     font-size: $select-fz;
+    cursor: $select-cursor;
     outline: none;
     -moz-appearance: none;
     -webkit-appearance: none;
