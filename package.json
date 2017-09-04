@@ -1,0 +1,20 @@
+{
+  "name": "custom-select-scss",
+  "version": "1.0.0",
+  "description": "Sass based custom select, a css-only solution.",
+  "main": "custom-select.scss",
+  "keywords": ["select", "custom", "scss", "sass"],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/entozoon/custom-select-scss.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/entozoon/custom-select-scss/issues"
+  },
+  "homepage": "https://github.com/entozoon/custom-select-scss#readme"
+}
