@@ -2,6 +2,7 @@ $select-fz: 16px !default; // set explicitly to prevent iOS zoom
 $select-pr: 30px !default;
 $select-fa: '\f0d7' !default;
 $select-fa-fz: inherit !default;
+$select-fa-fg: inherit !default;
 $select-cursor: pointer !default;
 
 .select {
@@ -34,11 +35,12 @@ $select-cursor: pointer !default;
     font-size: $select-fa-fz;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+    color: $select-fa-fg;
     text-rendering: auto;
     pointer-events: none;
     content: $select-fa;
-    -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
   }
 }
