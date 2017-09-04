@@ -2,6 +2,8 @@
 
 Sass based custom select, a css-only solution.
 
+![Funky](posterity/custom-select.png)
+
 ## Install
 
     npm i --save custom-select-scss
