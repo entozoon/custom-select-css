@@ -15,6 +15,8 @@ $select-fa-fz: inherit !default;
     padding-right: $select-pr;
     font-size: $select-fz;
     outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
     appearance: none;
     &::-ms-expand {
       display: none;
@@ -25,7 +27,7 @@ $select-fa-fz: inherit !default;
     top: 50%;
     right: 1rem;
     z-index: 2;
-    display: none;
+    display: block;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: $select-fa-fz;
     -moz-osx-font-smoothing: grayscale;
@@ -33,6 +35,8 @@ $select-fa-fz: inherit !default;
     text-rendering: auto;
     pointer-events: none;
     content: $select-fa;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
   }
 }

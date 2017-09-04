@@ -13,10 +13,20 @@ Depending on your current directory and frontend stack, you'll want something al
     @import '../node_modules/custom-select-scss/custom-select';
     @import '~custom-select-scss/custom-select'; // (webpack 3)
 
-## Customise
+## Integrate
+
+    <p class="select">
+      <label>Select</label>
+      <select>
+        <option>Lorem</option>
+        <option>Ipsum</option>
+      </select>
+    </p>
+
+## Interpolate
 
 Written in a non-invasive kinda way, so you can add your own styles to `select {}`, similar to your inputs as per usual, and override the handful of default values set in [the sass file](https://github.com/entozoon/custom-select-scss/blob/master/custom-select.scss).
 
-## Dependencies
+## Inherit
 
 - [Font awesome](https://github.com/FortAwesome/Font-Awesome/) (CDN is fine)
