@@ -1,0 +1,78 @@
+.select {
+  position: relative;
+  display: block;
+}
+
+.select,
+.select * {
+  box-sizing: border-box;
+}
+
+.select select {
+  width: 100%;
+  padding-right: 1.4em;
+  font-size: 1em;
+  cursor: pointer;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.select select::-ms-expand {
+  display: none;
+}
+
+.select::after {
+  position: absolute;
+  top: 50%;
+  right: 0.4em;
+  z-index: 2;
+  display: block;
+  width: 0.8em;
+  height: 0.496em;
+  line-height: 0.496em;
+  color: #333;
+  pointer-events: none;
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.151 8.075'%3E %3Cpolyline points='1.5 1.504 6.574 6.575 11.651 1.5' fill='none' stroke='%23333' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E %3C/svg%3E ");
+  -ms-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+fieldset {
+  margin-bottom: 1em;
+}
+
+.font-size--2 {
+  font-size: 3rem;
+}
+
+.font-size--3 {
+  font-size: 4rem;
+}
+
+.select {
+  max-width: 10em;
+  color: red;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+select {
+  padding: 0.2em 0.5em;
+}

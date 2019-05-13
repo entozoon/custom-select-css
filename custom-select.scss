@@ -1,10 +1,15 @@
-$select-fz: 16px !default; // set explicitly to prevent iOS zoom
-$select-pr: 30px !default;
-$select-fa: '\f0d7' !default;
-$select-fa-fz: inherit !default;
-$select-fa-fg: inherit !default;
-$select-cursor: pointer !default;
+$select-fz: 1em !default; // set explicitly to prevent iOS zoom
+$select-pr: 1em !default;
+$select-icon-size: 0.8em !default;
+$select-icon-color: #333 !default;
+$select-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.151 8.075">
+<polyline points="1.5 1.504 6.574 6.575 11.651 1.5" fill="none" stroke="#{$select-icon-color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+</svg>
+' !default;
+$select-icon-inset-right: 0.4em !default;
 
+$select-cursor: pointer !default;
+@import "./lib";
 .select {
   position: relative;
   display: block;
@@ -14,7 +19,7 @@ $select-cursor: pointer !default;
   }
   select {
     width: 100%;
-    padding-right: $select-pr;
+    padding-right: $select-pr + $select-icon-inset-right;
     font-size: $select-fz;
     cursor: $select-cursor;
     outline: none;
@@ -28,17 +33,15 @@ $select-cursor: pointer !default;
   &::after {
     position: absolute;
     top: 50%;
-    right: 1rem;
+    right: $select-icon-inset-right;
     z-index: 2;
     display: block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: $select-fa-fz;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    color: $select-fa-fg;
-    text-rendering: auto;
+    width: $select-icon-size;
+    height: $select-icon-size * 0.62;
+    line-height: $select-icon-size * 0.62;
+    color: $select-icon-color;
     pointer-events: none;
-    content: $select-fa;
+    content: svg($select-icon);
     -ms-transform: translate(0, -50%);
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
