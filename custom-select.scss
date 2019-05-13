@@ -13,6 +13,8 @@ $select-cursor: pointer !default;
 .select {
   position: relative;
   display: block;
+  width: 100%;
+  // You're gonna wonna set a max-width probs
   &,
   * {
     box-sizing: border-box;
