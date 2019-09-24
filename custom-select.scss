@@ -2,10 +2,7 @@ $select-fz: 1em !default; // set explicitly to prevent iOS zoom
 $select-pr: 1em !default;
 $select-icon-size: 0.8em !default;
 $select-icon-color: #333 !default;
-$select-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.151 8.075">
-<polyline points="1.5 1.504 6.574 6.575 11.651 1.5" fill="none" stroke="#{$select-icon-color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-</svg>
-' !default;
+$select-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.151 8.075"><polyline points="1.5 1.504 6.574 6.575 11.651 1.5" fill="none" stroke="#{$select-icon-color}" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/></svg>' !default;
 $select-icon-inset-right: 0.4em !default;
 
 $select-cursor: pointer !default;
