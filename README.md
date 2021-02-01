@@ -15,7 +15,7 @@ npm i --save custom-select-scss
 Depending on your current directory and frontend stack, you'll want something along the lines of one of:
 
 ```scss
-    @import 'custom-select-scss';
+@import 'custom-select-scss';
 ```
     
 ## Integrate
