@@ -6,26 +6,30 @@ SCSS custom select; a CSS-only solution
 
 ## Install
 
-    npm i --save custom-select-scss
+```bash
+npm i --save custom-select-scss
+```
 
 ## Include
 
 Depending on your current directory and frontend stack, you'll want something along the lines of one of:
 
-    @import '../node_modules/custom-select-scss/custom-select';
-    @import '~custom-select-scss/custom-select'; // (webpack 3+)
-
+```scss
+    @import 'custom-select-scss';
+```
+    
 ## Integrate
-
-    <p>
-      <label>Select</label>
-      <span class="select">
-        <select>
-          <option>Lorem</option>
-          <option>Ipsum</option>
-        </select>
-      </span>
-    </p>
+```html
+<p>
+  <label>Select</label>
+  <span class="select">
+    <select>
+      <option>Lorem</option>
+      <option>Ipsum</option>
+    </select>
+  </span>
+</p>
+```
 
 ## Interpolate
 
